@@ -18,7 +18,7 @@ const MovieDetail = () => {
   useEffect(() => {
     dispatch(fetchAsyncMovieOrShowDetail(imdbID));
     return () => {
-      dispatch(removeSelectedMovieOrShow());
+      dispatch(removeSelectedMovieOrShow()); //전에 있던 데이터 지우기
     };
   }, [dispatch, imdbID]);
 
