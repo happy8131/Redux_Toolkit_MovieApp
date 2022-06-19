@@ -1,9 +1,11 @@
 @import "../../common/colors.scss";
-
 .card-item {
   background: $secondary-color;
   cursor: pointer;
   transition: all 0.3s;
+  min-height: 400px;
+  height: 90%;
+  margin: 20px;
 
   &:hover {
     transform: scale(1.1);
@@ -19,6 +21,7 @@
     height: 100%;
   }
 }
+
 .card-bottom {
   padding: 20px;
 }
